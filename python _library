@@ -1,0 +1,21 @@
+ import pyttsx3
+import requests
+import speech_recognition as sr
+import datetime
+import os
+import cv2
+import random
+from requests import get
+import wikipedia
+import webbrowser
+import pywhatkit as kit
+import smtplib
+import sys
+import time
+import pyjokes
+from email import message
+import pyautogui
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
