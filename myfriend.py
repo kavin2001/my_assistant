@@ -50,7 +50,8 @@ def sendEmail(to, content):
 
 # for news updates
 def news():
-    main_url = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=96807d4680c1482ba30a34a0c6008591'
+# the news to speak link
+#####     main_url = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=code'
 
     main_page = requests.get(main_url).json()
     # print(main_page)
@@ -206,7 +207,7 @@ if __name__ == "__main__":
             try:
                 ipAdd = requests.get('https://api.ipify.org/').text
                 print(ipAdd)
-                url = 'https://get.geojs.io/v1/ip/geo/'+ipAdd+'.json'
+#                 url = 'https://get.geojs.io/v1/ip/geo/'+ipAdd+'.json'
                 geo_requests = requests.get(url)
                 geo_data = geo_requests.json()
                 # print(geo_data)
