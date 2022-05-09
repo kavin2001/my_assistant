@@ -45,7 +45,7 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp@gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('mkmkavin2001@gmail.com', '9488536289')  # your email address , your password    server.sendmail('senderemail@gmail.com', to, content)  # your email address
+    server.login('user email.id', 'password')  # your email address , your password    server.sendmail('senderemail@gmail.com', to, content)  # your email address
     server.close()
 
 # for news updates
@@ -132,7 +132,7 @@ if __name__ == "__main__":
             webbrowser.open(f"{cm}")
 
         elif "send message" in query:
-            kit.sendwhatmsg("+919488536289", "this is test is testing protocol",4,13)
+            kit.sendwhatmsg("numder for user", "this is test is testing protocol",4,13)
             time.sleep(120)
             speak("message has been sent sir")
 
